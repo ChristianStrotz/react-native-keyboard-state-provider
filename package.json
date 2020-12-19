@@ -1,0 +1,63 @@
+{
+  "name": "react-native-keyboard-state-provider",
+  "version": "1.0.0",
+  "description": "Keyboard state provider (visible/invisible) for react-native",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "keywords": [
+    "react-native",
+    "keyboard",
+    "provider",
+    "keyboard-state",
+    "ios",
+    "android",
+    "expo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianStrotz/react-native-keyboard-state-provider.git"
+  },
+  "author": "Christian Strotz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristianStrotz/react-native-keyboard-state-provider/issues"
+  },
+  "homepage": "https://github.com/ChristianStrotz/react-native-keyboard-state-provider#readme",
+  "scripts": {
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "build": "bob build",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@react-native-community/bob": "^0.17.1",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-native": "^0.63.42",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-native": "^0.63.4",
+    "typescript": "^4.1.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
